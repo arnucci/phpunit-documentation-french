@@ -340,9 +340,9 @@ dans le code suivant :
 
     Recherche seulement les fichiers de test avec le(s) suffixe(s) spécifié(s).
 
-``--report-useless-tests``
+``--dont-report-useless-tests``
 
-    Être strict sur les tests qui ne testent rien. Voir :ref:`risky-tests` pour plus de détails.
+    Ne pas signaler les tests qui ne testent rien. Voir :ref:`risky-tests` pour plus de détails.
 
 ``--strict-coverage``
 
@@ -482,6 +482,11 @@ dans le code suivant :
     répertoire de travail actuel et que ``--configuration`` n'est
     *pas* utilisé, la configuration sera automatiquement
     lue dans ce fichier.
+
+    Si un répertoire est spécifié et si
+    :file:`phpunit.xml` ou :file:`phpunit.xml.dist` (in that order)
+    existe dans ce répertoire, la configuration sera
+    automatiquement lue dans ce fichier.
 
 ``--no-configuration``
 
